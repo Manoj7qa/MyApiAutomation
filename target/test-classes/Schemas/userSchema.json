@@ -1,0 +1,745 @@
+{
+	"postUser": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"code": {
+				"type": "integer"
+			},
+			"type": {
+				"type": "string"
+			},
+			"message": {
+				"type": "string"
+			}
+		},
+		"required": [
+			"code",
+			"type",
+			"message"
+		]
+	},
+	"domains": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "array",
+		"items": [
+			{
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "integer"
+					},
+					"name": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"id",
+					"name"
+				]
+			}
+		]
+	},
+	"count": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"startups": {
+				"type": "integer"
+			},
+			"investors": {
+				"type": "integer"
+			},
+			"mandates": {
+				"type": "integer"
+			}
+		},
+		"required": [
+			"startups",
+			"investors",
+			"mandates"
+		]
+	},
+	"news": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"totalItems": {
+				"type": "integer"
+			},
+			"totalPages": {
+				"type": "integer"
+			},
+			"currentPage": {
+				"type": "integer"
+			},
+			"results": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"title": {
+								"type": "string"
+							},
+							"is_approved": {
+								"type": "integer"
+							},
+							"user_id": {
+								"type": "integer"
+							},
+							"description": {
+								"type": "string"
+							},
+							"source_url": {
+								"type": "string"
+							},
+							"source_id": {
+								"type": "integer"
+							},
+							"categories": {
+								"type": "string"
+							},
+							"publishedOn": {
+								"type": "string"
+							},
+							"country": {
+								"type": "string"
+							},
+							"image_url": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"id",
+							"title",
+							"is_approved",
+							"user_id",
+							"description",
+							"source_url",
+							"source_id",
+							"categories",
+							"publishedOn",
+							"country",
+							"image_url"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"totalItems",
+			"totalPages",
+			"currentPage",
+			"results"
+		]
+	},
+	"3rdnews": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"totalItems": {
+				"type": "integer"
+			},
+			"totalPages": {
+				"type": "integer"
+			},
+			"currentPage": {
+				"type": "integer"
+			},
+			"results": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"title": {
+								"type": "string"
+							},
+							"is_approved": {
+								"type": "integer"
+							},
+							"user_id": {
+								"type": "integer"
+							},
+							"description": {
+								"type": "string"
+							},
+							"source_url": {
+								"type": "string"
+							},
+							"source_id": {
+								"type": "integer"
+							},
+							"categories": {
+								"type": "string"
+							},
+							"publishedOn": {
+								"type": "string"
+							},
+							"country": {
+								"type": "string"
+							},
+							"image_url": {
+								"oneOf": [
+									{
+										"type": "string"
+									},
+									{
+										"type": "null"
+									}
+								]
+							}
+						},
+						"required": [
+							"id",
+							"title",
+							"is_approved",
+							"user_id",
+							"description",
+							"source_url",
+							"source_id",
+							"categories",
+							"publishedOn",
+							"country",
+							"image_url"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"totalItems",
+			"totalPages",
+			"currentPage",
+			"results"
+		]
+	},
+	"techMandate": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"total": {
+				"type": "integer"
+			},
+			"pageNo": {
+				"type": "integer"
+			},
+			"limit": {
+				"type": "integer"
+			},
+			"data": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"title": {
+								"type": "string"
+							},
+							"country": {
+								"type": "array",
+								"items": [
+									{
+										"type": "string"
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							"city": {
+								"type": "string"
+							},
+							"is_active": {
+								"type": "integer"
+							},
+							"creation_date": {
+								"type": "string"
+							},
+							"isExpired": {
+								"type": "integer"
+							},
+							"launchedDays": {
+								"type": "integer"
+							},
+							"startDate": {
+								"type": "string"
+							},
+							"endDate": {
+								"type": "string"
+							},
+							"investor": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"country": {
+										"type": "string"
+									},
+									"name": {
+										"type": "string"
+									},
+									"city": {
+										"type": "string"
+									},
+									"organization": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"id",
+									"country",
+									"name",
+									"city",
+									"organization"
+								]
+							},
+							"images": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"imageName": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"id",
+									"imageName"
+								]
+							},
+							"technologies": {
+								"type": "array",
+								"items": [
+									{
+										"type": "object",
+										"properties": {
+											"id": {
+												"type": "integer"
+											},
+											"name": {
+												"type": "string"
+											}
+										},
+										"required": [
+											"id",
+											"name"
+										]
+									}
+								]
+							},
+							"othersTech": {
+								"type": "null"
+							},
+							"othersDomain": {
+								"type": "null"
+							},
+							"startupStage": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"id",
+							"title",
+							"country",
+							"city",
+							"is_active",
+							"creation_date",
+							"isExpired",
+							"launchedDays",
+							"startDate",
+							"endDate",
+							"investor",
+							"images",
+							"technologies",
+							"othersTech",
+							"othersDomain",
+							"startupStage"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"total",
+			"pageNo",
+			"limit",
+			"data"
+		]
+	},
+	"otherTechMandate": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"total": {
+				"type": "integer"
+			},
+			"pageNo": {
+				"type": "integer"
+			},
+			"limit": {
+				"type": "integer"
+			},
+			"data": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"title": {
+								"type": "string"
+							},
+							"country": {
+								"type": "array",
+								"items": [
+									{
+										"type": "string"
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							"city": {
+								"type": "string"
+							},
+							"is_active": {
+								"type": "integer"
+							},
+							"creation_date": {
+								"type": "string"
+							},
+							"isExpired": {
+								"type": "integer"
+							},
+							"launchedDays": {
+								"type": "integer"
+							},
+							"startDate": {
+								"type": "string"
+							},
+							"endDate": {
+								"type": "string"
+							},
+							"investor": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"country": {
+										"type": "string"
+									},
+									"name": {
+										"type": "string"
+									},
+									"city": {
+										"type": "string"
+									},
+									"organization": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"id",
+									"country",
+									"name",
+									"city",
+									"organization"
+								]
+							},
+							"images": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"imageName": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"id",
+									"imageName"
+								]
+							},
+							"technologies": {
+								"type": "array",
+								"items": {}
+							},
+							"othersTech": {
+								"type": "string"
+							},
+							"othersDomain": {
+								"type": "string"
+							},
+							"startupStage": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"id",
+							"title",
+							"country",
+							"city",
+							"is_active",
+							"creation_date",
+							"isExpired",
+							"launchedDays",
+							"startDate",
+							"endDate",
+							"investor",
+							"images",
+							"technologies",
+							"othersTech",
+							"othersDomain",
+							"startupStage"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"total",
+			"pageNo",
+			"limit",
+			"data"
+		]
+	},
+	"noEvent": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"totalItems": {
+				"type": "integer"
+			},
+			"totalPages": {
+				"type": "integer"
+			},
+			"currentPage": {
+				"type": "integer"
+			},
+			"results": {
+				"type": "array",
+				"items": {}
+			}
+		},
+		"required": [
+			"totalItems",
+			"totalPages",
+			"currentPage",
+			"results"
+		]
+	},
+	"event": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"totalItems": {
+				"type": "integer"
+			},
+			"totalPages": {
+				"type": "integer"
+			},
+			"currentPage": {
+				"type": "integer"
+			},
+			"results": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"header": {
+								"type": "string"
+							},
+							"content": {
+								"type": "string"
+							},
+							"addedBy": {
+								"type": "integer"
+							},
+							"date": {
+								"type": "string"
+							},
+							"country": {
+								"type": "string"
+							},
+							"venue": {
+								"type": "string"
+							},
+							"createdAt": {
+								"type": "string"
+							},
+							"source_url": {
+								"type": "string"
+							},
+							"image": {
+								"type": "string"
+							},
+							"countryCode": {
+								"type": "string"
+							},
+							"organization": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"id",
+							"header",
+							"content",
+							"addedBy",
+							"date",
+							"country",
+							"venue",
+							"createdAt",
+							"source_url",
+							"image",
+							"countryCode",
+							"organization"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"totalItems",
+			"totalPages",
+			"currentPage",
+			"results"
+		]
+	},
+	"singleEvent": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"id": {
+				"type": "integer"
+			},
+			"header": {
+				"type": "string"
+			},
+			"content": {
+				"type": "string"
+			},
+			"addedBy": {
+				"type": "integer"
+			},
+			"date": {
+				"type": "string"
+			},
+			"venue": {
+				"type": "string"
+			},
+			"country": {
+				"type": "string"
+			},
+			"source_url": {
+				"type": "string"
+			},
+			"image": {
+				"type": "string"
+			},
+			"organization": {
+				"type": "string"
+			}
+		},
+		"required": [
+			"id",
+			"header",
+			"content",
+			"addedBy",
+			"date",
+			"venue",
+			"country",
+			"source_url",
+			"image",
+			"organization"
+		]
+	},
+	"subscription": {
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"type": "object",
+		"properties": {
+			"data": {
+				"type": "array",
+				"items": [
+					{
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"name": {
+								"type": "string"
+							},
+							"description": {
+								"type": "string"
+							},
+							"price": {
+								"type": "string"
+							},
+							"currency": {
+								"type": "string"
+							},
+							"is_active": {
+								"type": "integer"
+							},
+							"usertype_id": {
+								"type": "integer"
+							},
+							"features": {
+								"type": "array",
+								"items": [
+									{
+										"type": "string"
+									},
+									{
+										"type": "string"
+									},
+									{
+										"type": "string"
+									},
+									{
+										"type": "string"
+									}
+								]
+							}
+						},
+						"required": [
+							"id",
+							"name",
+							"description",
+							"price",
+							"currency",
+							"is_active",
+							"usertype_id",
+							"features"
+						]
+					}
+				]
+			}
+		},
+		"required": [
+			"data"
+		]
+	}
+}

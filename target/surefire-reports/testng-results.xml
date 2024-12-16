@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-16T19:42:56 IST" name="Suite" finished-at="2024-12-16T19:43:16 IST" duration-ms="20069">
+    <groups>
+    </groups>
+    <test started-at="2024-12-16T19:42:56 IST" name="Test" finished-at="2024-12-16T19:43:16 IST" duration-ms="20069">
+      <class name="api.test.BookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:42:56 IST" name="setup" finished-at="2024-12-16T19:42:56 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPostClient()[pri:1, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:42:56 IST" name="testPostClient" finished-at="2024-12-16T19:43:01 IST" duration-ms="4285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostClient -->
+        <test-method signature="testGetBookStatus()[pri:2, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:01 IST" name="testGetBookStatus" finished-at="2024-12-16T19:43:02 IST" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookStatus -->
+        <test-method signature="testGetAllBooks()[pri:3, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:02 IST" name="testGetAllBooks" finished-at="2024-12-16T19:43:04 IST" duration-ms="1942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllBooks -->
+        <test-method signature="testGetSingleBooks()[pri:4, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:04 IST" name="testGetSingleBooks" finished-at="2024-12-16T19:43:06 IST" duration-ms="1520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSingleBooks -->
+        <test-method signature="testPostOrder()[pri:5, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:06 IST" name="testPostOrder" finished-at="2024-12-16T19:43:07 IST" duration-ms="1504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostOrder -->
+        <test-method signature="testGetAllOrders()[pri:6, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:07 IST" name="testGetAllOrders" finished-at="2024-12-16T19:43:10 IST" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllOrders -->
+        <test-method signature="testGetSingleOrders()[pri:7, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:10 IST" name="testGetSingleOrders" finished-at="2024-12-16T19:43:11 IST" duration-ms="1541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSingleOrders -->
+        <test-method signature="testPatchOrders()[pri:8, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:11 IST" name="testPatchOrders" finished-at="2024-12-16T19:43:13 IST" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPatchOrders -->
+        <test-method signature="testGetSingleOrders1()[pri:9, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:13 IST" name="testGetSingleOrders1" finished-at="2024-12-16T19:43:14 IST" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSingleOrders1 -->
+        <test-method signature="testDeleteOrder()[pri:10, instance:api.test.BookTest@74a9c4b0]" started-at="2024-12-16T19:43:14 IST" name="testDeleteOrder" finished-at="2024-12-16T19:43:16 IST" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteOrder -->
+      </class> <!-- api.test.BookTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
